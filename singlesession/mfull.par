@@ -1,0 +1,48 @@
+#! /bin/bash
+#
+# nek parameter file
+#
+[GENERAL] 
+# startFrom = restart.fld 
+#stopAt = endTime
+ stopAt = numSteps
+#endTime = 1900 
+ numSteps =  300 
+
+
+dt = 0
+timeStepper = bdf2
+extrapolation = STANDARD
+variableDt = yes
+targetCFL = 5.0 # for production from init field
+
+#writeControl = runTime
+writeControl = timeStep
+writeInterval = 15 
+
+userParam10 = 1 # perform field interpolation 1=yes; 0=no
+
+
+#filtering = hpfrt # set to none in case of Smagorinski 
+#filterWeight = 10
+#filterCutoffRatio = 0.9 
+
+[PROBLEMTYPE]
+variableProperties = no # set to yes in case of Smagorinski
+equation = incompNS
+
+[PRESSURE]
+# preconditioner = semg_amg
+residualTol = 1e-04
+residualProj = yes
+
+[VELOCITY]
+residualTol = 1e-07
+density = 1
+viscosity = 1.532e-5
+
+[TEMPERATURE] # air Pr=0.71
+conductivity=2.587e-2 # udiff
+rhoCp= 1196 # => rhoCp=k/alpha
+residualTol = 1e-07
+ConjugateHeatTransfer = yes # then iftmsh=true for field 2

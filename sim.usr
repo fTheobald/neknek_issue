@@ -1,0 +1,246 @@
+
+c field interpolation
+# define ifgfldr uparam(10)
+
+
+c-----------------------------------------------------------------------
+      subroutine uservp (ix,iy,iz,ieg)
+      include 'SIZE'
+      include 'TOTAL'
+      include 'NEKUSE'
+
+
+      return
+      end
+c-----------------------------------------------------------------------
+      subroutine userf  (ix,iy,iz,ieg)
+      include 'SIZE'
+      include 'TOTAL'
+      include 'NEKUSE'
+     
+      ffx = 7.60435776e-06
+      ffy = 0.0 
+      ffz = 0.0
+
+      return
+      end
+c-----------------------------------------------------------------------
+      subroutine userq  (ix,iy,iz,ieg)
+      include 'SIZE'
+      include 'TOTAL'
+      include 'NEKUSE'
+
+      qvol   = 0.0
+      source = 0.0
+
+      return
+      end
+c-----------------------------------------------------------------------
+      subroutine userbc (i,j,k,f,eg)
+      include 'SIZE'
+      include 'TOTAL'
+      include 'NEKUSE'
+      include 'NEKNEK'
+      
+      integer e,f,eg
+      e = gllel(eg)
+
+      if (imask(i,j,k,e).eq.0) then ! kein neknek interace ?!
+c        dummy bc for fluid as there are non bc
+         ux=0.04473692648
+         uy=0.0
+         uz=0.0            
+
+         if(nelt.gt.nelv) then ! ifcht=true
+            temp=1.00624/2.0*z
+         else ! then ifcht=false
+            temp=z
+         endif 
+      else ! NEKNEK interface
+         if (igeom.le.2) then ! was bedeutet das ???
+            ux = ubc(i,j,k,e,1)
+            uy = ubc(i,j,k,e,2)
+            uz = ubc(i,j,k,e,3)
+            if (nfld_neknek.gt.4) temp = ubc(i,j,k,e,ldim+2)
+         else
+            ux = valint(i,j,k,e,1)
+            uy = valint(i,j,k,e,2)
+            uz = valint(i,j,k,e,3)
+            if (nfld_neknek.gt.4) temp = valint(i,j,k,e,ldim+2)
+         endif
+      endif  
+      
+      return
+      end
+c-----------------------------------------------------------------------
+      subroutine useric (ix,iy,iz,ieg)
+      include 'SIZE'
+      include 'TOTAL'
+      include 'NEKUSE'
+
+      integer idum
+      save    idum 
+      data    idum / 0 /
+
+      real C, k, kx, ky
+
+      
+      Re_tau = 180  ! target/estimated Re_tau
+      delta=1.0
+      u_tau=Re_tau*param(2)/delta ! friction velocity
+      wu_l_tau=delta/Re_tau ! friction length
+      
+      C      = 5.17 ! log law constant
+      k      = 0.41 ! Von-Karman constant
+            
+      zp = (delta-abs(z))/wu_l_tau ! abs(z) due to z=0 at channel centre
+
+      
+c     Reichardt function
+      ux  = 1/k*log(1+k*zp) + (C - (1/k)*log(k)) *
+     $      (1 - exp(-zp/11) - yp/11*exp(-zp/3))      ! that is actually u^+
+      ux  = ux * u_tau !u=uPlus*u_tau
+
+c     perturb
+      eps = 3e-2 ! amplitude
+      xlen=6.454880
+      ylen=3.227440
+      
+      XLENplus=xlen/wu_l_tau
+      YLENplus=ylen/wu_l_tau
+      xpertplus=300 ! dimless perturbation spacing streamwise
+      ypertplus=100 ! dimless perturbation spacing spanwise
+c      nint => real to integer with rounding
+      nx=nint(XLENplus/xpertplus) ! number of perturbations in streamwise direction
+      ny=nint(YLENplus/ypertplus) ! number of perturbations in streamwise direction
+      kx  = nx ! 7.53
+      ky  = ny ! 4.25
+
+      alpha = kx * 2*PI/XLEN 
+      beta  = ky * 2*PI/YLEN
+ 
+      ux  = ux  + eps*beta  * sin(alpha*x)*cos(beta*y) 
+      uz  =       eps       * sin(alpha*x)*sin(beta*y)
+      uy  =      -eps*alpha * cos(alpha*x)*sin(beta*y)
+
+      temp=0.5*z
+
+      return
+      end
+c-----------------------------------------------------------------------
+      subroutine userchk
+      include 'SIZE'
+      include 'TOTAL'
+      include 'ZPER'  ! for nelx,nely,nelz
+      include 'NEKNEK'
+
+
+
+      n=nx1*ny1*nz1*nelv
+      if (istep.eq.0) then
+         if(ifgfldr.eq.1) then
+            call gfldr('ref.fld')
+         endif
+         
+         ! do some checks
+         if(mod(nely,2).ne.0) then
+           if(nid.eq.0) write(6,*) 'ABORT: nely has to be even!'
+           call exitt
+         endif
+         if(nelx.gt.lelx .or. nely.gt.lely .or. nelz.gt.lelz) then
+           if(nid.eq.0) write(6,*) 'ABORT: nel_xyz > lel_xyz!'
+           call exitt
+         endif
+      endif
+
+      ubar = glsc2(vx,bm1,n)/volvm1
+      e2   = glsc3(vy,bm1,vy,n)+glsc3(vz,bm1,vz,n)
+      e2   = e2/volvm1
+      if(nid.eq.0) write(6,2) time,ubar,e2,ffx_new,trim(session)
+   2               format('Monitor: Ubar ',1p4e15.7,2x,1a) ! width 15 for minus sign   
+   
+      return
+      end
+c-----------------------------------------------------------------------
+      subroutine usrdat   ! This routine to modify element vertices
+      include 'SIZE'      ! _before_ mesh is generated, which 
+      include 'TOTAL'     ! guarantees GLL mapping of mesh.
+      include 'NEKNEK'
+
+c      n=8*nelt 
+c      xmin = glmin(xc,n) ! get global minimum of x
+c      ymin = glmin(yc,n) ! get global minimum of y
+      
+c      do ie=1,nelt
+cc        translate element corners in x and y direction
+c         do iv=1,8
+c            xc(iv,ie)=xc(iv,ie)-xmin
+c            yc(iv,ie)=yc(iv,ie)-ymin
+c         enddo
+cc        translate midpoint of curved edges (midpoint edges only) in x and y
+c         do ic=1,12
+c            if(ccurve(ic,ie).eq.'m') then
+c               curve(1,ic,ie)=curve(1,ic,ie)-xmin
+c               curve(2,ic,ie)=curve(2,ic,ie)-ymin
+c            endif
+c         enddo  
+c      enddo
+
+c     NEKNEK params 
+      if(ifneknek) then
+c        ngeom - parameter controlling the number of iterations,
+c        set to ngeom=2 by default (no iterations) 
+c        One could change the number of iterations as
+c         ngeom = 2 !5 !2
+         ngeom = 2
+
+c        ninter - parameter controlling the order of interface extrapolation 
+c        for neknek,
+c        set to ninter=1 by default
+c        One could change it as
+c         ninter = 1! 2 !1
+         ninter = 1
+c        Caution: if ninter greater than 1 is chosen, ngeom greater than 2 
+c        should be used for stability
+
+c        Set number of fields to interpolate
+c        nfld_neknek = ndim+1 (just velocity+pressure)
+c        nfld_neknek = ndim+2 (velocity + pressure + temperature)
+
+c        nfld_neknek = 3 - u,v,pr in 2D
+c        nfld_neknek = 4 - u,v,pr,t in 2D
+
+c        nfld_neknek = 4 - u,v,w,pr in 3D 
+c        nfld_neknek = 5 - u,v,w,pr,t in 3D 
+
+         nfld_neknek=4 + 1 !+ ldimt!just velocity+pressure+temperature
+      endif
+
+
+      
+      return
+      end
+c-----------------------------------------------------------------------
+      subroutine usrdat2   ! This routine to modify mesh coordinates
+      include 'SIZE'
+      include 'TOTAL'
+
+c     This routine initializes the mulitdomain coupling          
+      if(ifneknek) call multimesh_create
+      
+      return
+      end
+c-----------------------------------------------------------------------
+      subroutine usrdat3
+      include 'SIZE'
+      include 'TOTAL'
+
+      return
+      end
+
+cc
+c automatically added by makenek
+      subroutine usrsetvert(glo_num,nel,nx,ny,nz) ! to modify glo_num
+      integer*8 glo_num(1)
+      return
+      end

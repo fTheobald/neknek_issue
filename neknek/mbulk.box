@@ -1,0 +1,21 @@
+base.rea
+-3                     spatial dimension  ( < 0 --> generate .rea/.re2 pair)
+2                      number of fields
+#1                      number of fields
+#=======================================================================
+#
+#    Example of .box file for channel flow
+#    Grid spacing in y is compuated as:
+#    tanh(beta*(2y-1)/tanh(beta) mapping [0,1] -> [-1,1]
+#    where beta=2.4 is mesh streching parameter
+#
+#=======================================================================
+#
+Box
+-27 -14  9                                         nelx,nely,nelz for Box
+0 6.454880237579345 1.                                        x0,x1,gain
+0 3.227440118789672 1.                                        y0,y1,gain
+-0.858077 -0.743125 -0.571375 -0.359053 -0.122389 
+0.122389 0.359053 0.571375 0.743125 0.858077
+P  ,P  ,P  ,P  ,int,int                              vel bc's: xmin,xmax,ymin,ymax,zmin,zmax
+P  ,P  ,P  ,P  ,int,int                              temp BCs

@@ -1,0 +1,1351 @@
+--------------------------------------------------------------------------
+[[39435,1],17]: A high-performance Open MPI point-to-point messaging module
+was unable to find any relevant network interfaces:
+
+Module: OpenFabrics (openib)
+  Host: MMT-TFD-H01
+
+Another transport will be used instead, although this may result in
+lower performance.
+--------------------------------------------------------------------------
+/----------------------------------------------------------\\
+|      _   __ ______ __ __  ______  ____   ____   ____     |
+|     / | / // ____// //_/ / ____/ / __ \\/ __ \\/ __ \\   |
+|    /  |/ // __/  / ,<   /___ \\ / / / // / / // / / /    |
+|   / /|  // /___ / /| | ____/ / / /_/ // /_/ // /_/ /     |
+|  /_/ |_//_____//_/ |_|/_____/  \\___/ \\___/ \\___/      |
+|                                                          |
+|----------------------------------------------------------|
+|                                                          |
+| NEK5000:  Open Source Spectral Element Solver            |
+| COPYRIGHT (c) 2008-2017 UCHICAGO ARGONNE, LLC            |
+| Version:  v17.0                                          |
+| Web:      http://nek5000.mcs.anl.gov                     |
+|                                                          |
+\\----------------------------------------------------------/
+                                                              
+
+ Number of processors:          15
+/----------------------------------------------------------\\
+|      _   __ ______ __ __  ______  ____   ____   ____     |
+|     / | / // ____// //_/ / ____/ / __ \\/ __ \\/ __ \\   |
+|    /  |/ // __/  / ,<   /___ \\ / / / // / / // / / /    |
+|   / /|  // /___ / /| | ____/ / / /_/ // /_/ // /_/ /     |
+|  /_/ |_//_____//_/ |_|/_____/  \\___/ \\___/ \\___/      |
+|                                                          |
+|----------------------------------------------------------|
+|                                                          |
+| NEK5000:  Open Source Spectral Element Solver            |
+| COPYRIGHT (c) 2008-2017 UCHICAGO ARGONNE, LLC            |
+| Version:  v17.0                                          |
+| Web:      http://nek5000.mcs.anl.gov                     |
+|                                                          |
+\\----------------------------------------------------------/
+                                                              
+
+ Number of processors:          15
+ REAL    wdsize      :           8
+ INTEGER wdsize      :           4
+ Timer accuracy      : 4.01E-08
+  
+ REAL    wdsize      :           8
+ INTEGER wdsize      :           4
+ Timer accuracy      : 3.51E-08
+  
+ Reading /nfs/nfsRaid5/users/thfl0001/chtrdns/2019_12-05_neknek/mbulk.par                                                                    
+general = [(null)]
+general:stopat = [numSteps]
+general:numsteps = [300]
+general:dt = [0]
+general:timestepper = [bdf2]
+general:extrapolation = [STANDARD]
+general:variabledt = [yes]
+general:targetcfl = [5.0]
+general:writecontrol = [timeStep]
+general:writeinterval = [15]
+general:userparam10 = [1]
+problemtype = [(null)]
+problemtype:variableproperties = [no]
+problemtype:equation = [incompNS]
+pressure = [(null)]
+pressure:residualtol = [1e-04]
+pressure:residualproj = [yes]
+velocity = [(null)]
+velocity:residualtol = [1e-07]
+velocity:density = [1]
+velocity:viscosity = [1.532e-5]
+temperature = [(null)]
+temperature:conductivity = [2.587e-2]
+temperature:rhocp = [1196]
+temperature:residualtol = [1e-07]
+temperature:conjugateheattransfer = [yes]
+ Reading /nfs/nfsRaid5/users/thfl0001/chtrdns/2019_12-05_neknek/mbulk.re2                                                                    
+ Reading /nfs/nfsRaid5/users/thfl0001/chtrdns/2019_12-05_neknek/mwall.par                                                                    
+ mapping elements to processors
+ no user decompisition file found => use neks decomposition scheme
+ Reading /nfs/nfsRaid5/users/thfl0001/chtrdns/2019_12-05_neknek/mbulk.ma2                                                                    
+general = [(null)]
+general:stopat = [numSteps]
+general:numsteps = [300]
+general:dt = [0]
+general:timestepper = [bdf2]
+general:extrapolation = [STANDARD]
+general:variabledt = [yes]
+general:targetcfl = [5.0]
+general:writecontrol = [timeStep]
+general:writeinterval = [15]
+general:userparam10 = [1]
+problemtype = [(null)]
+problemtype:variableproperties = [no]
+problemtype:equation = [incompNS]
+pressure = [(null)]
+pressure:residualtol = [1e-04]
+pressure:residualproj = [yes]
+velocity = [(null)]
+velocity:residualtol = [1e-07]
+velocity:density = [1]
+velocity:viscosity = [1.532e-5]
+temperature = [(null)]
+temperature:conductivity = [2.587e-2]
+temperature:rhocp = [1196]
+temperature:residualtol = [1e-07]
+temperature:conjugateheattransfer = [yes]
+ Reading /nfs/nfsRaid5/users/thfl0001/chtrdns/2019_12-05_neknek/mwall.re2                                                                    
+ mapping elements to processors
+ no user decompisition file found => use neks decomposition scheme
+ Reading /nfs/nfsRaid5/users/thfl0001/chtrdns/2019_12-05_neknek/mwall.ma2                                                                    
+           0         226         226        3402        3402  NELV
+           1         226         226        3402        3402  NELV
+           2         226         226        3402        3402  NELV
+           3         227         227        3402        3402  NELV
+           4         227         227        3402        3402  NELV
+           5         227         227        3402        3402  NELV
+           6         227         227        3402        3402  NELV
+           7         227         227        3402        3402  NELV
+           8         227         227        3402        3402  NELV
+           9         227         227        3402        3402  NELV
+          10         227         227        3402        3402  NELV
+          11         227         227        3402        3402  NELV
+          12         227         227        3402        3402  NELV
+          13         227         227        3402        3402  NELV
+          14         227         227        3402        3402  NELV
+           0         307         307        4608        4608  NELV
+ RANK     0 IEG    1513    1514    1515    1516    1517    1518    1519    1540
+                   1541    1542    1543    1544    1545    1546    1567    1568
+                   1569    1570    1571    1572    1573    1597    1598    1599
+                   1600    1788    1789    1810    1811    1812    1813    1814
+                   1815    1816    1837    1838    1839    1840    1841    1842
+                   1843    1864    1865    1866    1867    1868    1869    1870
+                   1891    1892    1893    1894    1895    1896    1897    1918
+                   1919    1920    1921    1922    1923    1924    1945    1946
+                   1947    1948    1949    1950    1951    1975    1976    1977
+                   1978    2188    2189    2190    2191    2192    2193    2215
+                   2216    2217    2218    2219    2220    2221    2242    2243
+                   2244    2245    2246    2247    2248    2270    2271    2272
+                   2273    2274    2275    2297    2298    2299    2300    2301
+                   2302    2324    2325    2326    2327    2328    2329    2352
+                   2353    2354    2355    2356    2567    2568    2569    2570
+                   2571    2594    2595    2596    2597    2598    2621    2622
+                   2623    2624    2625    2626    2648    2649    2650    2651
+                   2652    2653    2675    2676    2677    2678    2679    2680
+                   2702    2703    2704    2705    2706    2707    2729    2730
+                   2731    2732    2733    2734    2893    2894    2920    2921
+                   2945    2946    2947    2948    2949    2972    2973    2974
+                   2975    2976    2999    3000    3001    3002    3003    3004
+                   3026    3027    3028    3029    3030    3031    3053    3054
+                   3055    3056    3057    3058    3080    3081    3082    3083
+                   3084    3085    3107    3108    3109    3110    3111    3112
+                   3216    3243    3270    3271    3272    3273    3297    3298
+                   3299    3300    3323    3324    3325    3326    3327    3350
+                   3351    3352    3353    3354    3377    3378    3379    3380
+                   3381    3382
+  
+ element load imbalance:            1         226         227
+ done :: mapping   0.16755E-02 sec
+
+  
+           8         307         307        4608        4608  NELV
+           9         307         307        4608        4608  NELV
+          10         307         307        4608        4608  NELV
+          11         307         307        4608        4608  NELV
+          12         308         308        4608        4608  NELV
+          13         308         308        4608        4608  NELV
+          14         308         308        4608        4608  NELV
+           1         307         307        4608        4608  NELV
+           2         307         307        4608        4608  NELV
+           3         307         307        4608        4608  NELV
+           4         307         307        4608        4608  NELV
+           5         307         307        4608        4608  NELV
+           6         307         307        4608        4608  NELV
+           7         307         307        4608        4608  NELV
+ RANK     0 IEG      52      53      54      64      73      74      75      85
+                     86      87     154     155     156     167     175     176
+                    177     182     183     186     187     188     189     190
+                    192     292     293     337     338     339     340     341
+                    342     343     344     345     346     347     348     377
+                    378     379     380     381     382     383     384     436
+                    437     438     448     457     458     459     469     470
+                    471     538     539     540     551     559     560     561
+                    566     567     570     571     572     573     574     576
+                    673     676     677     721     722     723     724     725
+                    726     727     728     729     730     731     732     761
+                    762     763     764     765     766     767     768     820
+                    821     822     832     841     842     843     853     854
+                    855     922     923     924     935     936     943     944
+                    945     949     950     951     954     955     956     957
+                    958     960    1024    1057    1060    1061    1105    1106
+                   1107    1108    1109    1110    1111    1112    1113    1114
+                   1115    1116    1145    1146    1147    1148    1149    1150
+                   1151    1152    1204    1205    1206    1216    1225    1226
+                   1227    1232    1237    1238    1239    1306    1307    1308
+                   1319    1320    1322    1323    1327    1328    1329    1333
+                   1334    1335    1338    1339    1340    1341    1342    1344
+                   1408    1409    1414    1441    1444    1445    1489    1490
+                   1491    1492    1493    1494    1495    1496    1497    1498
+                   1499    1500    1529    1530    1531    1532    1533    1534
+                   1535    1536    1588    1589    1590    1609    1610    1611
+                   1621    1622    1623    1690    1691    1692    1703    1704
+                   1706    1707    1711    1712    1713    1717    1718    1719
+                   1722    1723    1724    1725    1726    1728    1792    1793
+                   1798    1825    1828    1829    1873    1874    1875    1876
+                   1877    1878    1879    1880    1881    1882    1883    1884
+                   1913    1914    1915    1916    1917    1918    1919    1920
+                   1972    1973    1974    1993    1994    1995    2005    2006
+                   2007    2074    2075    2076    2087    2088    2090    2091
+                   2095    2096    2097    2101    2102    2103    2106    2107
+                   2108    2109    2110    2112    2176    2209    2212    2213
+                   2257    2258    2259    2260    2261    2262    2263    2264
+  preading mesh 
+                   2265    2266    2267    2268    2297    2299    2300    2301
+                   2302    2303    2304
+  
+ element load imbalance:            1         307         308
+ done :: mapping   0.22838E-02 sec
+
+  
+  preading bc for ifld           1
+  preading bc for ifld           2
+  preading mesh 
+ done :: read .re2 file   0.22E-02 sec
+
+ nelgt/nelgv/lelt:        3402        3402        1202
+ lx1  /lx2  /lx3 :           8           8           8
+ Reset the target Courant number to .5
+ setup mesh topology
+   Right-handed check complete for    3402 elements. OK.
+  preading curved sides 
+  preading bc for ifld           1
+  preading bc for ifld           2
+ done :: read .re2 file   0.25E-02 sec
+
+ nelgt/nelgv/lelt:        4608        4608        1202
+ lx1  /lx2  /lx3 :           8           8           8
+ Reset the target Courant number to .5
+ setup mesh topology
+   Right-handed check complete for    4608 elements. OK.
+   setvert3d:   8      450576     1185408      450576      450576
+ call usrsetvert
+ done :: usrsetvert
+
+   setvert3d:   8      622848     1618176      622848      622848
+ call usrsetvert
+ done :: usrsetvert
+
+gs_setup: 100734 unique labels shared
+   pairwise times (avg, min, max): 0.000127948 0.000124931 0.000130613
+gs_setup: 118875 unique labels shared
+   pairwise times (avg, min, max): 9.15377e-05 8.77865e-05 9.33615e-05
+   crystal router                : 0.000618965 0.000600779 0.000625342
+   used all_to_all method: pairwise
+   handle bytes (avg, min, max): 962856 916404 1005860
+   buffer bytes (avg, min, max): 233532 183536 287760
+   setupds time 1.2835E-01 seconds   0  8      450576        3402
+           8  max multiplicity
+ done :: setup mesh topology
+  
+ call usrdat
+ done :: usrdat
+
+ generate geometry data
+   crystal router                : 0.000748877 0.000724464 0.000761737
+   used all_to_all method: pairwise
+   handle bytes (avg, min, max): 1.24464e+06 1188252 1286692
+   buffer bytes (avg, min, max): 263970 200368 313328
+   setupds time 1.6278E-01 seconds   0  8      622848        4608
+          12  max multiplicity
+ done :: setup mesh topology
+  
+ call usrdat
+ done :: usrdat
+
+ generate geometry data
+ NOTE: All elements deformed , param(59) ^=0
+ done :: generate geometry data
+  
+ call usrdat2
+ NOTE: All elements deformed , param(59) ^=0
+ done :: generate geometry data
+  
+ call usrdat2
+           0           5           5 T T Neknek log
+           2           1 Neknek log ngeom ninter
+           1           5           5 T T Neknek log
+           2           1 Neknek log ngeom ninter
+ done :: usrdat2
+
+ regenerate geometry data           1
+ done :: usrdat2
+
+ regenerate geometry data           1
+ NOTE: All elements deformed , param(59) ^=0
+ done :: regenerate geometry data           1
+  
+ verify mesh topology
+   0.0000000000000000        6.4548802375793448       Xrange
+   0.0000000000000000        3.2274401187896720       Yrange
+ -0.85807699999999998       0.85807699999999998       Zrange
+ done :: verify mesh topology
+  
+ IFTRAN   = T
+ IFFLOW   = T
+ IFHEAT   = T
+ IFSPLIT  = T
+ IFLOMACH = F
+ IFUSERVP = F
+ IFUSERMV = F
+ IFPERT   = F
+ IFADJ    = F
+ IFSTRS   = F
+ IFCHAR   = F
+ IFCYCLIC = F
+ IFAXIS   = F
+ IFMVBD   = F
+ IFMELT   = F
+ IFNEKNEK = T
+ IFSYNC   = F
+   
+ IFVCOR   = T
+ IFINTQ   = F
+ IFGEOM   = F
+ IFSURT   = F
+ IFWCNO   = F
+   
+ IFTMSH for field           1    =  F
+ IFADVC for field           1    =  T
+ IFNONL for field           1    =  F
+   
+ IFTMSH for field           2    =  T
+ IFADVC for field           2    =  T
+ IFNONL for field           2    =  F
+   
+ Dealiasing enabled, lxd=          12
+ NOTE: All elements deformed , param(59) ^=0
+ done :: regenerate geometry data           1
+  
+ verify mesh topology
+   0.0000000000000000        6.4548802375793457       Xrange
+  -1.1604383141119437E-016   3.2274401187896729       Yrange
+  -1.0000000000000000        1.0000000000000000       Zrange
+ done :: verify mesh topology
+  
+ IFTRAN   = T
+ IFFLOW   = T
+ IFHEAT   = T
+ IFSPLIT  = T
+ IFLOMACH = F
+ IFUSERVP = F
+ IFUSERMV = F
+ IFPERT   = F
+ IFADJ    = F
+ IFSTRS   = F
+ IFCHAR   = F
+ IFCYCLIC = F
+ IFAXIS   = F
+ IFMVBD   = F
+ IFMELT   = F
+ IFNEKNEK = T
+ IFSYNC   = F
+   
+ IFVCOR   = T
+ IFINTQ   = F
+ IFGEOM   = F
+ IFSURT   = F
+ IFWCNO   = F
+   
+ IFTMSH for field           1    =  F
+ IFADVC for field           1    =  T
+ IFNONL for field           1    =  F
+   
+ IFTMSH for field           2    =  T
+ IFADVC for field           2    =  T
+ IFNONL for field           2    =  F
+   
+ Dealiasing enabled, lxd=          12
+  
+ Estimated eigenvalues
+ EIGAA =    1.5118283619441240     
+ EIGGA =    116611.42290141477     
+ EIGAE =   0.23687725824923597     
+ EIGAS =    1.3056886626591303E-002
+ EIGGE =    116611.42290141477     
+ EIGGS =    2.0000000000000000     
+  
+ verify mesh topology
+   0.0000000000000000        6.4548802375793448       Xrange
+   0.0000000000000000        3.2274401187896720       Yrange
+ -0.85807699999999998       0.85807699999999998       Zrange
+ done :: verify mesh topology
+  
+  E-solver strategy:  0 itr
+ mg_nx:           1           3           7
+ mg_ny:           1           3           7
+ mg_nz:           1           3           7
+ call usrsetvert
+ done :: usrsetvert
+
+gs_setup: 1932 unique labels shared
+   pairwise times (avg, min, max): 1.17581e-05 1.09478e-05 1.2008e-05
+   crystal router                : 3.21161e-05 3.14179e-05 3.27598e-05
+   all reduce                    : 7.80734e-05 7.70115e-05 7.91144e-05
+   used all_to_all method: pairwise
+   handle bytes (avg, min, max): 26010.9 24132 28244
+   buffer bytes (avg, min, max): 7022.93 5456 8880
+   setupds time 5.2311E-03 seconds   1  2        3780        3402
+   setvert3d:   4       68040       95256       68040       68040
+ call usrsetvert
+ done :: usrsetvert
+
+gs_setup: 18258 unique labels shared
+   pairwise times (avg, min, max): 3.98895e-05 3.91864e-05 4.07178e-05
+   crystal router                : 0.000123644 0.000120658 0.000124892
+  
+ Estimated eigenvalues
+ EIGAA =    1.2172624638395064     
+ EIGGA =    2389427.4307598919     
+ EIGAE =   0.23687725824923592     
+ EIGAS =    1.6216528568954794E-002
+ EIGGE =    2389427.4307598919     
+ EIGGS =    2.0000000000000000     
+  
+ verify mesh topology
+   0.0000000000000000        6.4548802375793457       Xrange
+  -1.1604383141119437E-016   3.2274401187896729       Yrange
+  -1.0000000000000000        1.0000000000000000       Zrange
+   all reduce                    : 0.000310835 0.000310316 0.000311233
+   used all_to_all method: pairwise
+   handle bytes (avg, min, max): 185921 175252 196868
+   buffer bytes (avg, min, max): 47095.5 36912 58448
+   setupds time 2.7411E-02 seconds   2  4       68040        3402
+   setvert3d:   4       68040       95256       68040       68040
+ call usrsetvert
+ done :: usrsetvert
+
+gs_setup: 18258 unique labels shared
+   pairwise times (avg, min, max): 2.33937e-05 2.22871e-05 2.43562e-05
+ done :: verify mesh topology
+  
+  E-solver strategy:  0 itr
+ mg_nx:           1           3           7
+ mg_ny:           1           3           7
+ mg_nz:           1           3           7
+ call usrsetvert
+ done :: usrsetvert
+
+gs_setup: 2529 unique labels shared
+   pairwise times (avg, min, max): 6.97762e-06 6.0348e-06 7.7678e-06
+   crystal router                : 2.04227e-05 1.97766e-05 2.07087e-05
+   crystal router                : 0.000123403 0.000120022 0.000124492
+   all reduce                    : 7.61004e-05 7.58888e-05 7.63279e-05
+   used all_to_all method: pairwise
+   handle bytes (avg, min, max): 32905.9 30492 34900
+   buffer bytes (avg, min, max): 7061.33 5296 8624
+   setupds time 4.2297E-03 seconds   1  2        5376        4608
+   all reduce                    : 0.000291945 0.000291421 0.00029246
+   used all_to_all method: pairwise
+   handle bytes (avg, min, max): 185921 175252 196868
+   buffer bytes (avg, min, max): 47095.5 36912 58448
+   setupds time 2.5805E-02 seconds   3  4       68040        3402
+   setvert3d:   4       94464      131328       94464       94464
+ call usrsetvert
+ done :: usrsetvert
+
+   setvert3d:   6      216972      434700      216972      216972
+ call usrsetvert
+ done :: usrsetvert
+
+gs_setup: 22079 unique labels shared
+   pairwise times (avg, min, max): 2.12599e-05 2.00241e-05 2.22305e-05
+gs_setup: 51192 unique labels shared
+   pairwise times (avg, min, max): 4.61811e-05 4.44244e-05 4.72508e-05
+   crystal router                : 0.000144563 0.000140157 0.00014672
+   all reduce                    : 0.000338761 0.000338615 0.000338874
+   used all_to_all method: pairwise
+   handle bytes (avg, min, max): 238928 225564 248644
+   buffer bytes (avg, min, max): 51669.3 39088 61680
+   setupds time 3.0434E-02 seconds   2  4       94464        4608
+   setvert3d:   4       94464      131328       94464       94464
+ call usrsetvert
+ done :: usrsetvert
+
+gs_setup: 22079 unique labels shared
+   pairwise times (avg, min, max): 2.08165e-05 1.94641e-05 2.16786e-05
+   crystal router                : 0.000143695 0.000139114 0.000145677
+   crystal router                : 0.000335264 0.000326002 0.000338501
+   all reduce                    : 0.000360782 0.000360162 0.000361105
+   used all_to_all method: pairwise
+   handle bytes (avg, min, max): 238928 225564 248644
+   buffer bytes (avg, min, max): 51669.3 39088 61680
+   setupds time 2.9682E-02 seconds   3  4       94464        4608
+   setvert3d:   6      300288      595200      300288      300288
+ call usrsetvert
+ done :: usrsetvert
+
+   all reduce                    : 0.000723132 0.000722392 0.000723397
+   used all_to_all method: pairwise
+   handle bytes (avg, min, max): 498203 472676 522740
+   buffer bytes (avg, min, max): 122598 96272 151408
+   setupds time 6.5631E-02 seconds   4  6      216972        3402
+gs_setup: 60861 unique labels shared
+ regenerate geometry data           1
+   pairwise times (avg, min, max): 8.14352e-05 7.94394e-05 8.33461e-05
+ NOTE: All elements deformed , param(59) ^=0
+ done :: regenerate geometry data           1
+  
+ h1_mg_nx:           1           3           7
+ h1_mg_ny:           1           3           7
+ h1_mg_nz:           1           3           7
+ call usrsetvert
+ done :: usrsetvert
+
+gs_setup: 1932 unique labels shared
+   pairwise times (avg, min, max): 8.34321e-06 8.1082e-06 8.562e-06
+   crystal router                : 1.83106e-05 1.78836e-05 1.84766e-05
+   all reduce                    : 5.65609e-05 5.63691e-05 5.67881e-05
+   used all_to_all method: pairwise
+   handle bytes (avg, min, max): 26010.9 24132 28244
+   buffer bytes (avg, min, max): 7022.93 5456 8880
+   setupds time 3.6247E-03 seconds   5  2        3780        3402
+   setvert3d:   4       68040       95256       68040       68040
+ call usrsetvert
+ done :: usrsetvert
+
+gs_setup: 18258 unique labels shared
+   pairwise times (avg, min, max): 2.10579e-05 2.03857e-05 2.18498e-05
+   crystal router                : 0.000381069 0.000367852 0.000387462
+   crystal router                : 0.000124032 0.000120442 0.000125205
+   all reduce                    : 0.000420191 0.000419483 0.000420842
+   used all_to_all method: pairwise
+   handle bytes (avg, min, max): 185921 175252 196868
+   buffer bytes (avg, min, max): 47095.5 36912 58448
+   setupds time 2.6184E-02 seconds   6  4       68040        3402
+   setvert3d:   4       68040       95256       68040       68040
+ call usrsetvert
+ done :: usrsetvert
+
+gs_setup: 18258 unique labels shared
+   all reduce                    : 0.000949486 0.000948124 0.000950309
+   used all_to_all method: pairwise
+   handle bytes (avg, min, max): 642839 611484 665908
+   buffer bytes (avg, min, max): 137306 104112 163248
+   setupds time 9.5778E-02 seconds   4  6      300288        4608
+   pairwise times (avg, min, max): 2.19671e-05 2.10186e-05 2.2937e-05
+ regenerate geometry data           1
+   crystal router                : 0.000126081 0.000122557 0.000127399
+   all reduce                    : 0.00033682 0.000336068 0.00033742
+   used all_to_all method: pairwise
+   handle bytes (avg, min, max): 185921 175252 196868
+   buffer bytes (avg, min, max): 47095.5 36912 58448
+   setupds time 2.5277E-02 seconds   7  4       68040        3402
+   setvert3d:   6      216972      434700      216972      216972
+ call usrsetvert
+ done :: usrsetvert
+
+gs_setup: 51192 unique labels shared
+   pairwise times (avg, min, max): 5.52581e-05 5.38705e-05 5.62717e-05
+ NOTE: All elements deformed , param(59) ^=0
+ done :: regenerate geometry data           1
+  
+ h1_mg_nx:           1           3           7
+ h1_mg_ny:           1           3           7
+ h1_mg_nz:           1           3           7
+ call usrsetvert
+ done :: usrsetvert
+
+gs_setup: 2529 unique labels shared
+   pairwise times (avg, min, max): 7.28736e-06 6.5819e-06 7.6546e-06
+   crystal router                : 2.06529e-05 2.00447e-05 2.10093e-05
+   all reduce                    : 6.30999e-05 6.28275e-05 6.335e-05
+   used all_to_all method: pairwise
+   handle bytes (avg, min, max): 32905.9 30492 34900
+   buffer bytes (avg, min, max): 7061.33 5296 8624
+   setupds time 3.9630E-03 seconds   5  2        5376        4608
+   setvert3d:   4       94464      131328       94464       94464
+ call usrsetvert
+ done :: usrsetvert
+
+gs_setup: 22079 unique labels shared
+   pairwise times (avg, min, max): 2.25001e-05 2.11444e-05 2.35778e-05
+   crystal router                : 0.000324155 0.000315067 0.000327303
+   all reduce                    : 0.000714184 0.000713488 0.000714506
+   used all_to_all method: pairwise
+   handle bytes (avg, min, max): 498203 472676 522740
+   buffer bytes (avg, min, max): 122598 96272 151408
+   setupds time 8.3130E-02 seconds   8  6      216972        3402
+   setvert3d:   8      450576     1185408      450576      450576
+ call usrsetvert
+ done :: usrsetvert
+
+   crystal router                : 0.000144336 0.000139602 0.000146444
+   all reduce                    : 0.000338545 0.000338229 0.000339151
+   used all_to_all method: pairwise
+   handle bytes (avg, min, max): 238928 225564 248644
+   buffer bytes (avg, min, max): 51669.3 39088 61680
+   setupds time 2.9620E-02 seconds   6  4       94464        4608
+   setvert3d:   4       94464      131328       94464       94464
+ call usrsetvert
+ done :: usrsetvert
+
+gs_setup: 22079 unique labels shared
+   pairwise times (avg, min, max): 2.15808e-05 2.03002e-05 2.24889e-05
+gs_setup: 100734 unique labels shared
+   crystal router                : 0.000143643 0.000138905 0.000145836
+   pairwise times (avg, min, max): 0.000102785 9.95889e-05 0.00010443
+   all reduce                    : 0.00037617 0.000375363 0.000376759
+   used all_to_all method: pairwise
+   handle bytes (avg, min, max): 238928 225564 248644
+   buffer bytes (avg, min, max): 51669.3 39088 61680
+   setupds time 2.9871E-02 seconds   7  4       94464        4608
+   setvert3d:   6      300288      595200      300288      300288
+ call usrsetvert
+ done :: usrsetvert
+
+gs_setup: 60861 unique labels shared
+   pairwise times (avg, min, max): 4.41797e-05 4.24633e-05 4.55741e-05
+   crystal router                : 0.000381253 0.000368239 0.000387534
+   all reduce                    : 0.000902758 0.00090071 0.000903817
+   used all_to_all method: pairwise
+   handle bytes (avg, min, max): 642839 611484 665908
+   buffer bytes (avg, min, max): 137306 104112 163248
+   setupds time 8.4588E-02 seconds   8  6      300288        4608
+   crystal router                : 0.000637136 0.000619024 0.000643589
+   used all_to_all method: pairwise
+   handle bytes (avg, min, max): 962856 916404 1005860
+   buffer bytes (avg, min, max): 233532 183536 287760
+   setupds time 1.2451E-01 seconds   9  8      450576        3402
+   setvert3d:   8      622848     1618176      622848      622848
+ call usrsetvert
+ done :: usrsetvert
+
+   setvert3d:  10      768852     2510676      768852      768852
+ call usrsetvert
+ done :: usrsetvert
+
+gs_setup: 118875 unique labels shared
+   pairwise times (avg, min, max): 8.3217e-05 7.87927e-05 8.51581e-05
+gs_setup: 166884 unique labels shared
+   pairwise times (avg, min, max): 0.000214131 0.000211321 0.000216563
+   crystal router                : 0.000735891 0.000710759 0.000748368
+   used all_to_all method: pairwise
+   handle bytes (avg, min, max): 1.24464e+06 1188252 1286692
+   buffer bytes (avg, min, max): 263970 200368 313328
+   setupds time 1.6027E-01 seconds   9  8      622848        4608
+   setvert3d:  10     1062144     3421440     1062144     1062144
+ call usrsetvert
+ done :: usrsetvert
+
+gs_setup: 196121 unique labels shared
+   crystal router                : 0.00101624 0.000986227 0.0010266
+   used all_to_all method: pairwise
+   handle bytes (avg, min, max): 1.57988e+06 1506436 1646228
+   buffer bytes (avg, min, max): 379895 298704 467504
+   setupds time 2.3573E-01 seconds  10 10      768852        3402
+   pairwise times (avg, min, max): 0.000300058 0.0002939 0.000302813
+ setup h1 coarse grid, nx_crs=           2
+ call usrsetvert
+ done :: usrsetvert
+
+gs_setup: 1932 unique labels shared
+   pairwise times (avg, min, max): 8.99908e-06 8.7528e-06 9.1872e-06
+   crystal router                : 1.81655e-05 1.73601e-05 1.8305e-05
+   all reduce                    : 5.62927e-05 5.60418e-05 5.65159e-05
+   used all_to_all method: pairwise
+   handle bytes (avg, min, max): 26010.9 24132 28244
+   buffer bytes (avg, min, max): 7022.93 5456 8880
+   crystal router                : 0.0011907 0.00115422 0.00120556
+   used all_to_all method: pairwise
+   handle bytes (avg, min, max): 2.04432e+06 1955868 2110996
+   buffer bytes (avg, min, max): 431663 327856 511920
+   setupds time 2.8857E-01 seconds  10 10     1062144        4608
+ setup h1 coarse grid, nx_crs=           2
+ call usrsetvert
+ done :: usrsetvert
+
+gs_setup: 2529 unique labels shared
+   pairwise times (avg, min, max): 6.75304e-06 6.249e-06 7.1251e-06
+   crystal router                : 2.01642e-05 1.95094e-05 2.05105e-05
+   all reduce                    : 6.35092e-05 6.3099e-05 6.37892e-05
+   used all_to_all method: pairwise
+   handle bytes (avg, min, max): 32905.9 30492 34900
+   buffer bytes (avg, min, max): 7061.33 5296 8624
+ done :: setup h1 coarse grid   0.60529831900021236       sec
+  
+ call usrdat3
+ done :: usrdat3
+
+ set initial conditions
+ nekuic (1) for ifld            1
+ nekuic (1) for ifld            2
+ call nekuic for ifld            2
+ call nekuic for vel  
+ xyz min     0.0000       0.0000     -0.85808    
+ uvwpt min -0.31574     -0.11665     -0.29960E-01   0.0000     -0.42904    
+ xyz max     6.4549       3.2274      0.85808    
+ uvwpt max  0.39953      0.11665      0.29960E-01   0.0000      0.42904    
+ done :: set initial conditions
+  
+ call userchk
+ done :: setup h1 coarse grid   0.74062063599922112       sec
+  
+ call usrdat3
+ done :: usrdat3
+
+ set initial conditions
+ nekuic (1) for ifld            1
+ nekuic (1) for ifld            2
+ call nekuic for ifld            2
+ call nekuic for vel  
+ xyz min     0.0000     -0.11604E-15  -1.0000    
+ uvwpt min -0.34763     -0.11681     -0.29906E-01   0.0000     -0.50000    
+ xyz max     6.4549       3.2274       1.0000    
+ uvwpt max  0.39475      0.11681      0.29906E-01   0.0000      0.50000    
+ done :: set initial conditions
+  
+ call userchk
+          0  Multidomain data exchange done for mwall   1.5042E-02   1.5129E-02
+          0  Multidomain data exchange done for mbulk   1.5063E-02   4.0866E-01
+ call gfldr ref.fld
+ call gfldr ref.fld
+ done :: gfldr   5.0     sec
+Monitor: Ubar   0.0000000E+00  4.5502495E-02  9.9409416E-06  1.0132052+261  mbulk
+ done :: userchk
+
+gridpoints unique/tot:       1185408      1741824
+  dofs:              1148364              1185408
+  
+ Initialization successfully completed    7.8335     sec
+
+Starting time loop ...
+
+     DT/DTCFL/DTFS/DTINIT   0.199E-01   0.199E-01   0.000E+00   0.000E+00
+ done :: gfldr   6.4     sec
+Monitor: Ubar   0.0000000E+00  3.8622844E-02  1.1259001E-05  1.0132052+261  mwall
+ done :: userchk
+
+gridpoints unique/tot:       1618176      2359296
+  dofs:              1542911              1618175
+  
+ Initialization successfully completed    9.2267     sec
+
+Starting time loop ...
+
+     DT/DTCFL/DTFS/DTINIT   0.386E-02   0.386E-02   0.000E+00   0.000E+00
+Step      1, t= 3.8554116E-03, DT= 3.8554116E-03, C=  0.500 0.0000E+00 0.0000E+00
+Step      1, t= 3.8554116E-03, DT= 3.8554116E-03, C=  0.500 0.0000E+00 0.0000E+00
+             Solving for Hmholtz scalars
+  Temperature/Passive scalar solution
+          1  Hmholtz TEMP       1   1.7731E+01   2.5870E-02   1.0000E-07   3.1021E+05   F
+          1  Hmholtz TEMP       2   1.3703E-02   2.5870E-02   1.0000E-07   3.1021E+05   F
+          1  Hmholtz TEMP       3   1.2841E-05   2.5870E-02   1.0000E-07   3.1021E+05   F
+          1  Hmholtz TEMP       4   1.7475E-08   2.5870E-02   1.0000E-07   3.1021E+05   F
+          1  Hmholtz TEMP       3   1.7475E-08   1.7731E+01   1.0000E-07
+          1  Scalars done  3.8554E-03  5.9140E-02
+             Solving for Hmholtz scalars
+  Temperature/Passive scalar solution
+             Solving for fluid
+          1  Hmholtz TEMP       1   1.5130E+02   2.5870E-02   1.0000E-07   3.1021E+05   F
+          1  Hmholtz TEMP       2   5.8006E-01   2.5870E-02   1.0000E-07   3.1021E+05   F
+          1  Hmholtz TEMP       3   3.1688E-03   2.5870E-02   1.0000E-07   3.1021E+05   F
+          1  Hmholtz TEMP       4   3.3068E-05   2.5870E-02   1.0000E-07   3.1021E+05   F
+          1  Hmholtz TEMP       5   5.9132E-07   2.5870E-02   1.0000E-07   3.1021E+05   F
+          1  Hmholtz TEMP       6   1.6381E-08   2.5870E-02   1.0000E-07   3.1021E+05   F
+          1  Hmholtz TEMP       5   1.6381E-08   1.5130E+02   1.0000E-07
+          1  Scalars done  3.8554E-03  1.0550E-01
+             Solving for fluid
+    1 1.00000E-04 1.01021E-01 1.50050E-01 6.73249E-01       1 Divergence
+    2 1.00000E-04 6.28953E-02 1.50050E-01 4.19162E-01       1 Divergence
+    3 1.00000E-04 1.92494E-02 1.50050E-01 1.28287E-01       1 Divergence
+    4 1.00000E-04 4.99831E-03 1.50050E-01 3.33109E-02       1 Divergence
+    5 1.00000E-04 1.33334E-03 1.50050E-01 8.88599E-03       1 Divergence
+    6 1.00000E-04 4.19755E-04 1.50050E-01 2.79743E-03       1 Divergence
+    1 1.00000E-04 2.02273E-01 3.01106E-01 6.71765E-01       1 Divergence
+    7 1.00000E-04 1.09423E-04 1.50050E-01 7.29242E-04       1 Divergence
+    8 1.00000E-04 3.76354E-05 1.50050E-01 2.50819E-04       1 Divergence
+          1  PRES gmres         8   3.7635E-05   1.5005E-01   1.0000E-04   1.4586E-01   2.2604E-01    F
+    2 1.00000E-04 1.31222E-01 3.01106E-01 4.35798E-01       1 Divergence
+          1  Hmholtz VELX       1   2.6532E-01   1.5320E-05   1.0000E-07   2.5938E+02   F
+          1  Hmholtz VELX       2   1.1256E-04   1.5320E-05   1.0000E-07   2.5938E+02   F
+    3 1.00000E-04 6.65957E-02 3.01106E-01 2.21170E-01       1 Divergence
+          1  Hmholtz VELX       3   9.7464E-08   1.5320E-05   1.0000E-07   2.5938E+02   F
+          1  Hmholtz VELX       2   9.7464E-08   2.6532E-01   1.0000E-07
+          1  Hmholtz VELY       1   7.8946E-01   1.5320E-05   1.0000E-07   2.5938E+02   F
+          1  Hmholtz VELY       2   3.3361E-04   1.5320E-05   1.0000E-07   2.5938E+02   F
+          1  Hmholtz VELY       3   2.8814E-07   1.5320E-05   1.0000E-07   2.5938E+02   F
+    4 1.00000E-04 3.54525E-02 3.01106E-01 1.17741E-01       1 Divergence
+          1  Hmholtz VELY       4   3.5694E-10   1.5320E-05   1.0000E-07   2.5938E+02   F
+          1  Hmholtz VELY       3   3.5694E-10   7.8946E-01   1.0000E-07
+          1  Hmholtz VELZ       1   8.2848E-01   1.5320E-05   1.0000E-07   2.5938E+02   F
+          1  Hmholtz VELZ       2   3.6227E-04   1.5320E-05   1.0000E-07   2.5938E+02   F
+          1  Hmholtz VELZ       3   4.0283E-07   1.5320E-05   1.0000E-07   2.5938E+02   F
+          1  Hmholtz VELZ       4   5.3150E-10   1.5320E-05   1.0000E-07   2.5938E+02   F
+          1  Hmholtz VELZ       3   5.3150E-10   8.2848E-01   1.0000E-07
+    5 1.00000E-04 2.07977E-02 3.01106E-01 6.90711E-02       1 Divergence
+             L1/L2 DIV(V)          -1.5894E-07   3.7274E-02
+             L1/L2 QTL              0.0000E+00   0.0000E+00
+             L1/L2 DIV(V)-QTL      -1.5894E-07   3.7274E-02
+          1  Fluid done  3.8554E-03  4.5250E-01 mbulk
+    6 1.00000E-04 1.27206E-02 3.01106E-01 4.22462E-02       1 Divergence
+    7 1.00000E-04 7.76319E-03 3.01106E-01 2.57822E-02       1 Divergence
+    8 1.00000E-04 4.71055E-03 3.01106E-01 1.56441E-02       1 Divergence
+    9 1.00000E-04 2.84513E-03 3.01106E-01 9.44892E-03       1 Divergence
+   10 1.00000E-04 1.90285E-03 3.01106E-01 6.31953E-03       1 Divergence
+   11 1.00000E-04 1.30975E-03 3.01106E-01 4.34980E-03       1 Divergence
+   12 1.00000E-04 8.91131E-04 3.01106E-01 2.95952E-03       1 Divergence
+   13 1.00000E-04 6.51630E-04 3.01106E-01 2.16412E-03       1 Divergence
+   14 1.00000E-04 4.97907E-04 3.01106E-01 1.65359E-03       1 Divergence
+   15 1.00000E-04 3.67920E-04 3.01106E-01 1.22190E-03       1 Divergence
+   16 1.00000E-04 2.66648E-04 3.01106E-01 8.85562E-04       1 Divergence
+   17 1.00000E-04 1.91118E-04 3.01106E-01 6.34720E-04       1 Divergence
+   18 1.00000E-04 1.36579E-04 3.01106E-01 4.53589E-04       1 Divergence
+   19 1.00000E-04 9.57519E-05 3.01106E-01 3.18000E-04       1 Divergence
+          1  PRES gmres        19   9.5752E-05   3.0111E-01   1.0000E-04   4.2678E-01   6.8414E-01    F
+          1  Hmholtz VELX       1   3.3169E-01   1.5320E-05   1.0000E-07   2.5938E+02   F
+          1  Hmholtz VELX       2   6.3943E-04   1.5320E-05   1.0000E-07   2.5938E+02   F
+          1  Hmholtz VELX       3   4.2860E-06   1.5320E-05   1.0000E-07   2.5938E+02   F
+          1  Hmholtz VELX       4   5.1623E-08   1.5320E-05   1.0000E-07   2.5938E+02   F
+          1  Hmholtz VELX       3   5.1623E-08   3.3169E-01   1.0000E-07
+          1  Hmholtz VELY       1   9.0320E-01   1.5320E-05   1.0000E-07   2.5938E+02   F
+          1  Hmholtz VELY       2   6.9570E-04   1.5320E-05   1.0000E-07   2.5938E+02   F
+          1  Hmholtz VELY       3   6.1181E-06   1.5320E-05   1.0000E-07   2.5938E+02   F
+          1  Hmholtz VELY       4   7.3111E-08   1.5320E-05   1.0000E-07   2.5938E+02   F
+          1  Hmholtz VELY       3   7.3111E-08   9.0320E-01   1.0000E-07
+          1  Hmholtz VELZ       1   9.4304E-01   1.5320E-05   1.0000E-07   2.5938E+02   F
+          1  Hmholtz VELZ       2   5.3107E-04   1.5320E-05   1.0000E-07   2.5938E+02   F
+          1  Hmholtz VELZ       3   3.8617E-06   1.5320E-05   1.0000E-07   2.5938E+02   F
+          1  Hmholtz VELZ       4   3.7765E-08   1.5320E-05   1.0000E-07   2.5938E+02   F
+          1  Hmholtz VELZ       3   3.7765E-08   9.4304E-01   1.0000E-07
+             L1/L2 DIV(V)           4.4188E-08   3.8867E-02
+             L1/L2 QTL              0.0000E+00   0.0000E+00
+             L1/L2 DIV(V)-QTL       4.4188E-08   3.8867E-02
+          1  Fluid done  3.8554E-03  9.6444E-01 mwall
+          1  Multidomain data exchange done for mwall   1.5255E-02   1.5285E-02
+          1  Multidomain data exchange done for mbulk   1.5275E-02   6.4508E-01
+Monitor: Ubar   3.8554116E-03  4.5499329E-02  3.7606391E-05  1.2944520-321  mbulk
+Monitor: Ubar   3.8554116E-03  3.8616888E-02  5.6373385E-05  1.2944520-321  mwall
+     DT/DTCFL/DTFS/DTINIT   0.193E-01   0.193E-01   0.000E+00   0.000E+00
+Step      2, t= 7.7108232E-03, DT= 3.8554116E-03, C=  0.483 1.4239E+00 1.4239E+00
+Step      2, t= 7.7108232E-03, DT= 3.8554116E-03, C=  0.500 1.4239E+00 1.4239E+00
+             Solving for Hmholtz scalars
+             Solving for Hmholtz scalars
+          2  Hmholtz TEMP       3   2.6503E-08   8.0809E+01   1.0000E-07
+          2  Scalars done  7.7108E-03  5.5928E-02
+             Solving for fluid
+          2  Hmholtz TEMP       5   3.3551E-09   2.2605E+02   1.0000E-07
+          2  Scalars done  7.7108E-03  1.0228E-01
+             Solving for fluid
+          2  PRES gmres         9   3.7485E-05   4.0580E-01   1.0000E-04   1.6653E-01   2.5035E-01    F
+          2  Hmholtz VELX       2   6.5247E-08   3.8436E-01   1.0000E-07
+          2  Hmholtz VELY       3   1.5753E-10   1.1411E+00   1.0000E-07
+          2  Hmholtz VELZ       3   1.8318E-10   1.2015E+00   1.0000E-07
+             L1/L2 DIV(V)          -7.8321E-07   1.9573E-02
+             L1/L2 QTL              0.0000E+00   0.0000E+00
+             L1/L2 DIV(V)-QTL      -7.8321E-07   1.9573E-02
+          2  Fluid done  7.7108E-03  4.7375E-01 mbulk
+          2  PRES gmres       500   1.2922E-04   8.0445E-01   1.0000E-04   1.0128E+01   1.6055E+01    F
+          2  Hmholtz VELX       3   2.2092E-08   4.6782E-01   1.0000E-07
+          2  Hmholtz VELY       3   3.0983E-08   1.2663E+00   1.0000E-07
+          2  Hmholtz VELZ       3   1.6084E-08   1.3346E+00   1.0000E-07
+             L1/L2 DIV(V)           7.6239E-08   1.8526E-02
+             L1/L2 QTL              0.0000E+00   0.0000E+00
+             L1/L2 DIV(V)-QTL       7.6239E-08   1.8526E-02
+          2  Fluid done  7.7108E-03  1.6337E+01 mwall
+          2  Multidomain data exchange done for mbulk   1.6186E-02   1.5974E+01
+          2  Multidomain data exchange done for mwall   1.6160E-02   1.6367E-02
+Monitor: Ubar   7.7108232E-03  4.5502486E-02  9.9330855E-06  1.2944520-321  mbulk
+Monitor: Ubar   7.7108232E-03  3.8622851E-02  1.1340783E-05  1.2944520-321  mwall
+Step      3, t= 1.2337317E-02, DT= 4.6264939E-03, C=  0.149 1.8106E+01 1.6682E+01
+Step      3, t= 1.2337317E-02, DT= 4.6264939E-03, C=  0.070 1.8106E+01 1.6682E+01
+             Solving for Hmholtz scalars
+             Solving for Hmholtz scalars
+          3  Hmholtz TEMP       3   4.6228E-08   8.9903E+01   1.0000E-07
+          3  Scalars done  1.2337E-02  6.2269E-02
+             Solving for fluid
+          3  Hmholtz TEMP       5   6.9587E-09   2.3099E+02   1.0000E-07
+          3  Scalars done  1.2337E-02  1.0124E-01
+             Solving for fluid
+          3  PRES gmres         8   9.0907E-05   3.5859E-01   1.0000E-04   1.4824E-01   2.2298E-01    F
+          3  Hmholtz VELX       2   1.3061E-08   3.9662E-02   1.0000E-07
+          3  Hmholtz VELY       2   1.4705E-08   4.9520E-02   1.0000E-07
+          3  Hmholtz VELZ       2   2.9944E-08   5.5686E-02   1.0000E-07
+             L1/L2 DIV(V)          -9.7318E-07   1.3864E-02
+             L1/L2 QTL              0.0000E+00   0.0000E+00
+             L1/L2 DIV(V)-QTL      -9.7318E-07   1.3864E-02
+          3  Fluid done  1.2337E-02  4.3154E-01 mbulk
+          3  PRES gmres        25   9.5435E-05   6.9392E-01   1.0000E-04   5.3685E-01   8.3738E-01    F
+          3  Hmholtz VELX       3   3.2255E-09   4.4585E-02   1.0000E-07
+          3  Hmholtz VELY       3   4.0788E-09   9.4168E-02   1.0000E-07
+          3  Hmholtz VELZ       3   2.1849E-09   9.9866E-02   1.0000E-07
+             L1/L2 DIV(V)           3.4367E-07   1.2918E-02
+             L1/L2 QTL              0.0000E+00   0.0000E+00
+             L1/L2 DIV(V)-QTL       3.4367E-07   1.2918E-02
+          3  Fluid done  1.2337E-02  1.1115E+00 mwall
+          3  Multidomain data exchange done for mwall   1.5601E-02   1.5635E-02
+          3  Multidomain data exchange done for mbulk   1.5611E-02   7.7534E-01
+Monitor: Ubar   1.2337317E-02  4.5502454E-02  9.9590127E-06  1.2944520-321  mbulk
+Monitor: Ubar   1.2337317E-02  3.8622878E-02  1.1304349E-05  1.2944520-321  mwall
+Step      4, t= 1.7889110E-02, DT= 5.5517927E-03, C=  0.180 1.9548E+01 1.4417E+00
+Step      4, t= 1.7889110E-02, DT= 5.5517927E-03, C=  0.084 1.9548E+01 1.4417E+00
+             Solving for Hmholtz scalars
+             Solving for Hmholtz scalars
+          4  Hmholtz TEMP       3   2.1724E-08   1.7966E+01   1.0000E-07
+          4  Scalars done  1.7889E-02  5.5195E-02
+             Solving for fluid
+          4  Hmholtz TEMP       5   1.5635E-08   2.2629E+02   1.0000E-07
+          4  Scalars done  1.7889E-02  1.0567E-01
+             Solving for fluid
+          4  PRES gmres         7   4.7330E-05   8.6657E-02   1.0000E-04   1.2541E-01   1.9004E-01    F
+          4  Hmholtz VELX       2   2.8536E-09   6.1874E-03   1.0000E-07
+          4  Hmholtz VELY       2   2.9953E-09   7.4826E-03   1.0000E-07
+          4  Hmholtz VELZ       2   9.1977E-09   1.2994E-02   1.0000E-07
+             L1/L2 DIV(V)          -7.7167E-07   8.5632E-03
+             L1/L2 QTL              0.0000E+00   0.0000E+00
+             L1/L2 DIV(V)-QTL      -7.7167E-07   8.5632E-03
+          4  Fluid done  1.7889E-02  3.9735E-01 mbulk
+          4  PRES gmres        17   9.4245E-05   1.6721E-01   1.0000E-04   3.6844E-01   5.7405E-01    F
+          4  Hmholtz VELX       3   3.1552E-09   1.3486E-02   1.0000E-07
+          4  Hmholtz VELY       3   1.4787E-09   1.3771E-02   1.0000E-07
+          4  Hmholtz VELZ       3   1.5122E-09   2.1547E-02   1.0000E-07
+             L1/L2 DIV(V)           4.5437E-07   8.5009E-03
+             L1/L2 QTL              0.0000E+00   0.0000E+00
+             L1/L2 DIV(V)-QTL       4.5437E-07   8.5009E-03
+          4  Fluid done  1.7889E-02  8.4157E-01 mwall
+          4  Multidomain data exchange done for mwall   1.4431E-02   1.4460E-02
+          4  Multidomain data exchange done for mbulk   1.4429E-02   5.5263E-01
+Monitor: Ubar   1.7889110E-02  4.5502453E-02  9.9471626E-06  1.2944520-321  mbulk
+Monitor: Ubar   1.7889110E-02  3.8622887E-02  1.1283536E-05  1.2944520-321  mwall
+Step      5, t= 2.4551261E-02, DT= 6.6621512E-03, C=  0.216 2.0716E+01 1.1684E+00
+Step      5, t= 2.4551261E-02, DT= 6.6621512E-03, C=  0.101 2.0716E+01 1.1684E+00
+             Solving for Hmholtz scalars
+             Solving for Hmholtz scalars
+          5  Hmholtz TEMP       3   2.3213E-08   1.1748E+01   1.0000E-07
+          5  Scalars done  2.4551E-02  5.3666E-02
+             Solving for fluid
+          5  Hmholtz TEMP       5   3.4723E-08   2.2287E+02   1.0000E-07
+          5  Scalars done  2.4551E-02  9.7336E-02
+             Solving for fluid
+          5  PRES gmres         5   4.7065E-05   5.3302E-03   1.0000E-04   8.9343E-02   1.3552E-01    F
+          5  Hmholtz VELX       2   1.5216E-09   2.2586E-03   1.0000E-07
+          5  Hmholtz VELY       2   1.2842E-09   1.5002E-03   1.0000E-07
+          5  Hmholtz VELZ       2   5.2392E-09   5.8048E-03   1.0000E-07
+             L1/L2 DIV(V)          -9.2594E-07   5.6193E-03
+             L1/L2 QTL              0.0000E+00   0.0000E+00
+             L1/L2 DIV(V)-QTL      -9.2594E-07   5.6193E-03
+          5  Fluid done  2.4551E-02  3.3933E-01 mbulk
+          5  PRES gmres        15   9.8234E-05   1.5848E-02   1.0000E-04   3.1907E-01   4.8955E-01    F
+          5  Hmholtz VELX       2   4.5031E-08   2.3325E-03   1.0000E-07
+          5  Hmholtz VELY       2   3.4150E-08   2.2136E-03   1.0000E-07
+          5  Hmholtz VELZ       2   8.5206E-08   8.7901E-03   1.0000E-07
+             L1/L2 DIV(V)           3.2674E-07   6.1911E-03
+             L1/L2 QTL              0.0000E+00   0.0000E+00
+             L1/L2 DIV(V)-QTL       3.2674E-07   6.1911E-03
+          5  Fluid done  2.4551E-02  7.3533E-01 mwall
+          5  Multidomain data exchange done for mwall   1.4398E-02   1.4431E-02
+          5  Multidomain data exchange done for mbulk   1.4409E-02   4.9698E-01
+Monitor: Ubar   2.4551261E-02  4.5502457E-02  9.9466944E-06  1.2944520-321  mbulk
+Monitor: Ubar   2.4551261E-02  3.8622891E-02  1.1274160E-05  1.2944520-321  mwall
+Step      6, t= 3.2545842E-02, DT= 7.9945815E-03, C=  0.259 2.1766E+01 1.0497E+00
+Step      6, t= 3.2545842E-02, DT= 7.9945815E-03, C=  0.122 2.1766E+01 1.0497E+00
+             Solving for Hmholtz scalars
+             Solving for Hmholtz scalars
+          6  Hmholtz TEMP       3   3.1758E-08   1.0721E+01   1.0000E-07
+          6  Scalars done  3.2546E-02  5.3459E-02
+             Solving for fluid
+          6  Hmholtz TEMP       5   7.5681E-08   2.1886E+02   1.0000E-07
+          6  Scalars done  3.2546E-02  9.7101E-02
+             Solving for fluid
+          6  Project PRES           1.4276E-02   1.3691E-02   9.5903E-01   1  13
+          6  PRES gmres         3   3.9290E-05   2.3876E-03   1.0000E-04   5.5001E-02   8.3254E-02    F
+          6  Project PRES           2.4296E-02   2.4765E-02   1.0193E+00   1  13
+          6  Hmholtz VELX       2   1.1934E-09   1.1599E-03   1.0000E-07
+          6  Hmholtz VELY       2   1.5046E-09   1.5091E-03   1.0000E-07
+          6  Hmholtz VELZ       2   5.0240E-09   3.2467E-03   1.0000E-07
+             L1/L2 DIV(V)          -7.5425E-07   3.9423E-03
+             L1/L2 QTL              0.0000E+00   0.0000E+00
+             L1/L2 DIV(V)-QTL      -7.5425E-07   3.9423E-03
+          6  Fluid done  3.2546E-02  3.0472E-01 mbulk
+          6  PRES gmres         7   9.1081E-05   4.7016E-03   1.0000E-04   1.5444E-01   2.2793E-01    F
+          6  Hmholtz VELX       2   5.8410E-08   1.6132E-03   1.0000E-07
+          6  Hmholtz VELY       2   3.7597E-08   1.4059E-03   1.0000E-07
+          6  Hmholtz VELZ       2   9.1584E-08   4.8197E-03   1.0000E-07
+             L1/L2 DIV(V)           3.7482E-07   4.9170E-03
+             L1/L2 QTL              0.0000E+00   0.0000E+00
+             L1/L2 DIV(V)-QTL       3.7482E-07   4.9170E-03
+          6  Fluid done  3.2546E-02  4.9650E-01 mwall
+          6  Multidomain data exchange done for mbulk   1.4506E-02   2.9223E-01
+          6  Multidomain data exchange done for mwall   1.4502E-02   1.4602E-02
+Monitor: Ubar   3.2545842E-02  4.5502461E-02  9.9460704E-06  1.2944520-321  mbulk
+Monitor: Ubar   3.2545842E-02  3.8622895E-02  1.1271116E-05  1.2944520-321  mwall
+Step      7, t= 4.2139340E-02, DT= 9.5934977E-03, C=  0.311 2.2576E+01 8.0980E-01
+Step      7, t= 4.2139340E-02, DT= 9.5934977E-03, C=  0.146 2.2576E+01 8.0980E-01
+             Solving for Hmholtz scalars
+             Solving for Hmholtz scalars
+          7  Hmholtz TEMP       3   5.1453E-08   1.0590E+01   1.0000E-07
+          7  Scalars done  4.2139E-02  5.4002E-02
+             Solving for fluid
+          7  Hmholtz TEMP       6   9.0663E-09   2.1415E+02   1.0000E-07
+          7  Scalars done  4.2139E-02  1.0754E-01
+          7  Project PRES           3.8907E-03   6.2946E-03   1.6178E+00   2  13
+             Solving for fluid
+          7  PRES gmres         2   7.0018E-05   6.5069E-04   1.0000E-04   3.5849E-02   5.7867E-02    F
+          7  Hmholtz VELX       2   1.2395E-09   9.3270E-04   1.0000E-07
+          7  Project PRES           1.4030E-02   1.3105E-02   9.3405E-01   2  13
+          7  Hmholtz VELY       2   1.5807E-09   1.2416E-03   1.0000E-07
+          7  Hmholtz VELZ       2   4.7168E-09   1.9892E-03   1.0000E-07
+             L1/L2 DIV(V)          -8.2635E-07   3.0078E-03
+             L1/L2 QTL              0.0000E+00   0.0000E+00
+             L1/L2 DIV(V)-QTL      -8.2635E-07   3.0078E-03
+          7  Fluid done  4.2139E-02  2.8281E-01 mbulk
+          7  PRES gmres         5   9.7462E-05   2.7149E-03   1.0000E-04   1.1052E-01   1.6179E-01    F
+          7  Hmholtz VELX       2   5.7916E-08   1.0019E-03   1.0000E-07
+          7  Hmholtz VELY       2   4.9626E-08   1.1628E-03   1.0000E-07
+          7  Hmholtz VELZ       3   1.7765E-09   2.8000E-03   1.0000E-07
+             L1/L2 DIV(V)           2.9005E-07   4.1532E-03
+             L1/L2 QTL              0.0000E+00   0.0000E+00
+             L1/L2 DIV(V)-QTL       2.9005E-07   4.1532E-03
+          7  Fluid done  4.2139E-02  4.3591E-01 mwall
+          7  Multidomain data exchange done for mbulk   1.4271E-02   2.6437E-01
+          7  Multidomain data exchange done for mwall   1.4271E-02   1.4302E-02
+Monitor: Ubar   4.2139340E-02  4.5502466E-02  9.9462921E-06  1.2944520-321  mbulk
+Monitor: Ubar   4.2139340E-02  3.8622898E-02  1.1269174E-05  1.2944520-321  mwall
+Step      8, t= 5.3651537E-02, DT= 1.1512197E-02, C=  0.175 2.3336E+01 7.6054E-01
+Step      8, t= 5.3651537E-02, DT= 1.1512197E-02, C=  0.373 2.3336E+01 7.6054E-01
+             Solving for Hmholtz scalars
+             Solving for Hmholtz scalars
+          8  Hmholtz TEMP       3   8.7893E-08   1.0575E+01   1.0000E-07
+          8  Scalars done  5.3652E-02  5.3528E-02
+             Solving for fluid
+          8  Hmholtz TEMP       6   2.1825E-08   2.0866E+02   1.0000E-07
+          8  Scalars done  5.3652E-02  1.0781E-01
+          8  Project PRES           1.5350E-03   3.5267E-03   2.2975E+00   3  13
+             Solving for fluid
+          8  PRES gmres         1   7.5260E-05   2.5672E-04   1.0000E-04   1.8292E-02   3.2884E-02    F
+          8  Hmholtz VELX       2   1.5424E-09   8.8353E-04   1.0000E-07
+          8  Project PRES           3.1442E-03   7.4586E-03   2.3722E+00   3  13
+          8  Hmholtz VELY       2   1.9495E-09   1.1166E-03   1.0000E-07
+          8  Hmholtz VELZ       2   4.8848E-09   1.3822E-03   1.0000E-07
+             L1/L2 DIV(V)          -7.3036E-07   2.4171E-03
+             L1/L2 QTL              0.0000E+00   0.0000E+00
+             L1/L2 DIV(V)-QTL      -7.3036E-07   2.4171E-03
+          8  Fluid done  5.3652E-02  2.6573E-01 mbulk
+          8  PRES gmres         3   9.5219E-05   6.0843E-04   1.0000E-04   6.6261E-02   9.9820E-02    F
+          8  Hmholtz VELX       2   8.0708E-08   9.7100E-04   1.0000E-07
+          8  Hmholtz VELY       2   6.7453E-08   1.0381E-03   1.0000E-07
+          8  Hmholtz VELZ       3   2.5572E-09   1.7824E-03   1.0000E-07
+             L1/L2 DIV(V)           3.0157E-07   3.6497E-03
+             L1/L2 QTL              0.0000E+00   0.0000E+00
+             L1/L2 DIV(V)-QTL       3.0157E-07   3.6497E-03
+          8  Fluid done  5.3652E-02  3.8630E-01 mwall
+          8  Multidomain data exchange done for mwall   1.4265E-02   1.4293E-02
+          8  Multidomain data exchange done for mbulk   1.4264E-02   2.3341E-01
+Monitor: Ubar   5.3651537E-02  4.5502472E-02  9.9467459E-06  1.2944520-321  mbulk
+Monitor: Ubar   5.3651537E-02  3.8622903E-02  1.1268092E-05  1.2944520-321  mwall
+Step      9, t= 6.7466174E-02, DT= 1.3814637E-02, C=  0.447 2.4049E+01 7.1217E-01
+Step      9, t= 6.7466174E-02, DT= 1.3814637E-02, C=  0.210 2.4049E+01 7.1217E-01
+             Solving for Hmholtz scalars
+             Solving for Hmholtz scalars
+          9  Hmholtz TEMP       4   6.1305E-10   1.0574E+01   1.0000E-07
+          9  Scalars done  6.7466E-02  6.0905E-02
+             Solving for fluid
+          9  Hmholtz TEMP       6   5.1070E-08   2.0229E+02   1.0000E-07
+          9  Scalars done  6.7466E-02  1.0713E-01
+          9  Project PRES           1.9327E-03   2.4239E-03   1.2542E+00   4  13
+             Solving for fluid
+          9  PRES gmres         1   7.8212E-05   3.2323E-04   1.0000E-04   1.9283E-02   3.3518E-02    F
+          9  Hmholtz VELX       2   2.1198E-09   8.6883E-04   1.0000E-07
+          9  Project PRES           1.8959E-03   4.8537E-03   2.5601E+00   4  13
+          9  Hmholtz VELY       2   2.5518E-09   9.9746E-04   1.0000E-07
+          9  Hmholtz VELZ       2   5.3140E-09   1.1329E-03   1.0000E-07
+             L1/L2 DIV(V)          -7.4610E-07   2.0671E-03
+             L1/L2 QTL              0.0000E+00   0.0000E+00
+             L1/L2 DIV(V)-QTL      -7.4610E-07   2.0671E-03
+          9  Fluid done  6.7466E-02  2.7067E-01 mbulk
+          9  PRES gmres         3   8.1338E-05   3.6688E-04   1.0000E-04   6.6217E-02   1.0008E-01    F
+          9  Hmholtz VELX       3   4.4346E-09   9.5484E-04   1.0000E-07
+          9  Hmholtz VELY       2   9.3436E-08   9.8510E-04   1.0000E-07
+          9  Hmholtz VELZ       3   3.8357E-09   1.2787E-03   1.0000E-07
+             L1/L2 DIV(V)           2.9063E-07   3.2912E-03
+             L1/L2 QTL              0.0000E+00   0.0000E+00
+             L1/L2 DIV(V)-QTL       2.9063E-07   3.2912E-03
+          9  Fluid done  6.7466E-02  3.9800E-01 mwall
+          9  Multidomain data exchange done for mwall   1.4250E-02   1.4280E-02
+          9  Multidomain data exchange done for mbulk   1.4250E-02   2.3134E-01
+Monitor: Ubar   6.7466174E-02  4.5502479E-02  9.9470566E-06  1.2944520-321  mbulk
+Monitor: Ubar   6.7466174E-02  3.8622908E-02  1.1267462E-05  1.2944520-321  mwall
+Step     10, t= 8.1280811E-02, DT= 1.3814637E-02, C=  0.447 2.4771E+01 7.2226E-01
+Step     10, t= 8.1280811E-02, DT= 1.3814637E-02, C=  0.252 2.4771E+01 7.2227E-01
+             Solving for Hmholtz scalars
+             Solving for Hmholtz scalars
+         10  Hmholtz TEMP       4   6.6925E-10   1.0263E+01   1.0000E-07
+         10  Scalars done  8.1281E-02  6.1241E-02
+             Solving for fluid
+         10  Hmholtz TEMP       6   5.2402E-08   1.8913E+02   1.0000E-07
+         10  Scalars done  8.1281E-02  1.0727E-01
+         10  Project PRES           9.9538E-04   1.3667E-03   1.3730E+00   5  13
+             Solving for fluid
+         10  PRES gmres         1   6.5357E-05   1.6647E-04   1.0000E-04   1.8676E-02   3.2563E-02    F
+         10  Hmholtz VELX       2   2.1664E-09   8.3922E-04   1.0000E-07
+         10  Project PRES           5.7615E-03   2.0148E-03   3.4970E-01   5  13
+         10  Hmholtz VELY       2   2.5194E-09   9.3334E-04   1.0000E-07
+         10  Hmholtz VELZ       2   4.5423E-09   9.9123E-04   1.0000E-07
+             L1/L2 DIV(V)          -7.4238E-07   1.8021E-03
+             L1/L2 QTL              0.0000E+00   0.0000E+00
+             L1/L2 DIV(V)-QTL      -7.4238E-07   1.8021E-03
+         10  Fluid done  8.1281E-02  2.7751E-01 mbulk
+         10  PRES gmres         4   8.5067E-05   1.1149E-03   1.0000E-04   8.6655E-02   1.2924E-01    F
+         10  Hmholtz VELX       3   4.5673E-09   9.2776E-04   1.0000E-07
+         10  Hmholtz VELY       2   9.5343E-08   9.3838E-04   1.0000E-07
+         10  Hmholtz VELZ       3   3.7697E-09   1.0452E-03   1.0000E-07
+             L1/L2 DIV(V)           2.9912E-07   3.0461E-03
+             L1/L2 QTL              0.0000E+00   0.0000E+00
+             L1/L2 DIV(V)-QTL       2.9912E-07   3.0461E-03
+         10  Fluid done  8.1281E-02  4.3458E-01 mwall
+         10  Multidomain data exchange done for mwall   1.4264E-02   1.4292E-02
+         10  Multidomain data exchange done for mbulk   1.4263E-02   2.6210E-01
+Monitor: Ubar   8.1280811E-02  4.5502486E-02  9.9474432E-06  1.2944520-321  mbulk
+Monitor: Ubar   8.1280811E-02  3.8622913E-02  1.1267197E-05  1.2944520-321  mwall
+Step     11, t= 9.5095448E-02, DT= 1.3814637E-02, C=  0.447 2.5531E+01 7.6007E-01
+Step     11, t= 9.5095448E-02, DT= 1.3814637E-02, C=  0.252 2.5531E+01 7.6007E-01
+             Solving for Hmholtz scalars
+             Solving for Hmholtz scalars
+         11  Hmholtz TEMP       4   6.6859E-10   1.0263E+01   1.0000E-07
+         11  Scalars done  9.5095E-02  5.5398E-02
+             Solving for fluid
+         11  Hmholtz TEMP       6   4.9991E-08   1.8210E+02   1.0000E-07
+         11  Scalars done  9.5095E-02  1.0017E-01
+             Solving for fluid
+         11  Project PRES           5.8394E-04   1.0847E-03   1.8576E+00   6  13
+         11  PRES gmres         1   2.8667E-05   9.7659E-05   1.0000E-04   1.9792E-02   3.3285E-02    F
+         11  Hmholtz VELX       2   2.1418E-09   8.3229E-04   1.0000E-07
+         11  Project PRES           1.8477E-02   1.4271E-03   7.7238E-02   6  13
+         11  Hmholtz VELY       2   2.4578E-09   9.1169E-04   1.0000E-07
+         11  Hmholtz VELZ       2   3.9789E-09   9.0348E-04   1.0000E-07
+             L1/L2 DIV(V)          -7.9115E-07   1.6182E-03
+             L1/L2 QTL              0.0000E+00   0.0000E+00
+             L1/L2 DIV(V)-QTL      -7.9115E-07   1.6182E-03
+         11  Fluid done  9.5095E-02  2.6834E-01 mbulk
+         11  PRES gmres        10   9.6386E-05   3.5754E-03   1.0000E-04   2.0783E-01   3.1084E-01    F
+         11  Hmholtz VELX       3   4.5376E-09   9.3489E-04   1.0000E-07
+         11  Hmholtz VELY       2   9.5766E-08   9.3190E-04   1.0000E-07
+         11  Hmholtz VELZ       3   3.6156E-09   9.6041E-04   1.0000E-07
+             L1/L2 DIV(V)           2.8849E-07   2.8377E-03
+             L1/L2 QTL              0.0000E+00   0.0000E+00
+             L1/L2 DIV(V)-QTL       2.8849E-07   2.8377E-03
+         11  Fluid done  9.5095E-02  6.0769E-01 mwall
+         11  Multidomain data exchange done for mwall   1.4414E-02   1.4443E-02
+         11  Multidomain data exchange done for mbulk   1.4413E-02   4.4352E-01
+Monitor: Ubar   9.5095448E-02  4.5502493E-02  9.9477196E-06  1.2944520-321  mbulk
+Monitor: Ubar   9.5095448E-02  3.8622917E-02  1.1267091E-05  1.2944520-321  mwall
+Step     12, t= 1.0891008E-01, DT= 1.3814637E-02, C=  0.447 2.6458E+01 9.2731E-01
+Step     12, t= 1.0891008E-01, DT= 1.3814637E-02, C=  0.252 2.6458E+01 9.2731E-01
+             Solving for Hmholtz scalars
+             Solving for Hmholtz scalars
+         12  Hmholtz TEMP       4   6.6790E-10   1.0262E+01   1.0000E-07
+         12  Scalars done  1.0891E-01  5.5508E-02
+             Solving for fluid
+         12  Hmholtz TEMP       6   4.8960E-08   1.7537E+02   1.0000E-07
+         12  Scalars done  1.0891E-01  9.9287E-02
+             Solving for fluid
+         12  Project PRES           4.0700E-04   6.6028E-04   1.6223E+00   7  13
+         12  PRES gmres         1   2.5166E-05   6.8068E-05   1.0000E-04   1.9064E-02   3.3612E-02    F
+         12  Hmholtz VELX       2   2.1144E-09   8.2929E-04   1.0000E-07
+         12  Project PRES           2.9331E-01   1.2855E-03   4.3828E-03   7  13
+         12  Hmholtz VELY       2   2.3822E-09   9.0271E-04   1.0000E-07
+         12  Hmholtz VELZ       2   3.5715E-09   8.7197E-04   1.0000E-07
+             L1/L2 DIV(V)          -7.2698E-07   1.4752E-03
+             L1/L2 QTL              0.0000E+00   0.0000E+00
+             L1/L2 DIV(V)-QTL      -7.2698E-07   1.4752E-03
+         12  Fluid done  1.0891E-01  2.7541E-01 mbulk
+         12  PRES gmres        19   9.4876E-05   5.6758E-02   1.0000E-04   3.8897E-01   6.1417E-01    F
+         12  Hmholtz VELX       3   4.4330E-09   9.2740E-04   1.0000E-07
+         12  Hmholtz VELY       2   9.5311E-08   9.2563E-04   1.0000E-07
+         12  Hmholtz VELZ       2   9.7838E-08   9.1080E-04   1.0000E-07
+             L1/L2 DIV(V)           2.8202E-07   2.6625E-03
+             L1/L2 QTL              0.0000E+00   0.0000E+00
+             L1/L2 DIV(V)-QTL       2.8202E-07   2.6625E-03
+         12  Fluid done  1.0891E-01  9.1113E-01 mwall
+         12  Multidomain data exchange done for mwall   1.4253E-02   1.4284E-02
+         12  Multidomain data exchange done for mbulk   1.4256E-02   7.3878E-01
+Monitor: Ubar   1.0891008E-01  4.5502500E-02  9.9477359E-06  1.2944520-321  mbulk
+Monitor: Ubar   1.0891008E-01  3.8622922E-02  1.1266945E-05  1.2944520-321  mwall
+Step     13, t= 1.2272472E-01, DT= 1.3814637E-02, C=  0.447 2.7688E+01 1.2297E+00
+Step     13, t= 1.2272472E-01, DT= 1.3814637E-02, C=  0.252 2.7688E+01 1.2297E+00
+             Solving for Hmholtz scalars
+             Solving for Hmholtz scalars
+         13  Hmholtz TEMP       4   6.6721E-10   1.0262E+01   1.0000E-07
+         13  Scalars done  1.2272E-01  5.5868E-02
+             Solving for fluid
+         13  Hmholtz TEMP       6   4.8041E-08   1.6894E+02   1.0000E-07
+         13  Scalars done  1.2272E-01  9.9549E-02
+             Solving for fluid
+         13  Project PRES           3.4849E-04   4.8739E-04   1.3986E+00   8  13
+         13  PRES gmres         1   2.0649E-05   5.8282E-05   1.0000E-04   1.9913E-02   3.5060E-02    F
+         13  Hmholtz VELX       2   2.1076E-09   8.2955E-04   1.0000E-07
+         13  Project PRES           1.1369E+02   1.1870E-03   1.0440E-05   8  13
+         13  Hmholtz VELY       2   2.3673E-09   9.0364E-04   1.0000E-07
+         13  Hmholtz VELZ       2   3.2740E-09   8.6100E-04   1.0000E-07
+             L1/L2 DIV(V)          -7.4801E-07   1.3559E-03
+             L1/L2 QTL              0.0000E+00   0.0000E+00
+             L1/L2 DIV(V)-QTL      -7.4801E-07   1.3559E-03
+         13  Fluid done  1.2272E-01  2.8313E-01 mbulk
+         13  PRES gmres        37   9.0680E-05   2.2000E+01   1.0000E-04   7.5167E-01   1.1807E+00    F
+         13  Hmholtz VELX       3   4.3461E-09   9.2201E-04   1.0000E-07
+         13  Hmholtz VELY       2   9.3989E-08   9.1955E-04   1.0000E-07
+         13  Hmholtz VELZ       2   8.9711E-08   8.8148E-04   1.0000E-07
+             L1/L2 DIV(V)           2.6079E-07   2.5080E-03
+             L1/L2 QTL              0.0000E+00   0.0000E+00
+             L1/L2 DIV(V)-QTL       2.6079E-07   2.5080E-03
+         13  Fluid done  1.2272E-01  1.4869E+00 mwall
+         13  Multidomain data exchange done for mwall   1.4399E-02   1.4472E-02
+         13  Multidomain data exchange done for mbulk   1.4388E-02   1.3073E+00
+Monitor: Ubar   1.2272472E-01  4.5502507E-02  9.9477866E-06  1.2944520-321  mbulk
+Monitor: Ubar   1.2272472E-01  3.8622927E-02  1.1266710E-05  1.2944520-321  mwall
+Step     14, t= 1.3653936E-01, DT= 1.3814637E-02, C=  0.447 2.9495E+01 1.8065E+00
+Step     14, t= 1.3653936E-01, DT= 1.3814637E-02, C=  0.252 2.9495E+01 1.8065E+00
+             Solving for Hmholtz scalars
+             Solving for Hmholtz scalars
+         14  Hmholtz TEMP       4   6.6652E-10   1.0262E+01   1.0000E-07
+         14  Scalars done  1.3654E-01  5.9326E-02
+             Solving for fluid
+         14  Hmholtz TEMP       6   4.6855E-08   1.6280E+02   1.0000E-07
+         14  Scalars done  1.3654E-01  1.0350E-01
+             Solving for fluid
+         14  Project PRES           3.0387E-04   4.0702E-04   1.3395E+00   9  13
+         14  PRES gmres         1   1.6690E-05   5.0820E-05   1.0000E-04   2.0716E-02   3.6780E-02    F
+         14  Hmholtz VELX       2   2.1048E-09   8.2970E-04   1.0000E-07
+         14  Project PRES           1.3245E+07   9.7514E-04   7.3621E-11   9  13
+         14  Hmholtz VELY       2   2.3588E-09   9.0346E-04   1.0000E-07
+         14  Hmholtz VELZ       2   3.0879E-09   8.5598E-04   1.0000E-07
+             L1/L2 DIV(V)          -6.8290E-07   1.2542E-03
+             L1/L2 QTL              0.0000E+00   0.0000E+00
+             L1/L2 DIV(V)-QTL      -6.8290E-07   1.2542E-03
+         14  Fluid done  1.3654E-01  2.9673E-01 mbulk
+         14  PRES gmres        74   8.5903E-05   2.5631E+06   1.0000E-04   1.4871E+00   2.3452E+00    F
+         14  Hmholtz VELX       8   3.4196E-08   3.5097E+03   1.0000E-07
+         14  Hmholtz VELY       8   2.5844E-08   3.4184E+03   1.0000E-07
+         14  Hmholtz VELZ       8   3.2569E-08   8.1978E+03   1.0000E-07
+             L1/L2 DIV(V)           2.6866E-07   2.4441E+04
+             L1/L2 QTL              0.0000E+00   0.0000E+00
+             L1/L2 DIV(V)-QTL       2.6866E-07   2.4441E+04
+             WARNING: DIV(V)-QTL too large!
+         14  Fluid done  1.3654E-01  2.7894E+00 mwall
+         14  Multidomain data exchange done for mwall   1.4626E-02   1.4665E-02
+         14  Multidomain data exchange done for mbulk   1.4616E-02   2.5988E+00
+Monitor: Ubar   1.3653936E-01  4.5502514E-02  9.9479035E-06  1.2944520-321  mbulk
+Monitor: Ubar   1.3653936E-01  5.4812896E-02  6.4298113E+03  1.2944520-321  mwall
+Step     15, t= 1.4759107E-01, DT= 1.1051709E-02, C=******* 3.2609E+01 3.1149E+00
+Step     15, t= 1.4759107E-01, DT= 1.1051709E-02, C=  0.252 3.2609E+01 3.1149E+00
+             Solving for Hmholtz scalars
+             Solving for Hmholtz scalars
+         15  Hmholtz TEMP       3   8.8420E-08   9.8814E+00   1.0000E-07
+         15  Scalars done  1.4759E-01  4.9051E-02
+             Solving for fluid
+         15  Project PRES           6.4321E+03   6.4221E+03   9.9845E-01  10  13
+         15  Hmholtz TEMP      10   1.3510E-08   3.1628E+06   1.0000E-07
+         15  Scalars done  1.4759E-01  1.4633E-01
+             Solving for fluid
+         15  Project PRES           1.7845E+10   2.3024E+07   1.2902E-03  10  13
+         15  PRES gmres        15   4.9516E-05   1.0757E+03   1.0000E-04   2.6691E-01   4.1895E-01    F
+         15  Hmholtz VELX       4   2.0339E-08   2.4057E+03   1.0000E-07
+         15  Hmholtz VELY       4   2.1103E-08   2.4545E+03   1.0000E-07
+         15  Hmholtz VELZ       4   2.8871E-08   3.4404E+03   1.0000E-07
+             L1/L2 DIV(V)          -1.9605E+00   5.3462E+02
+             L1/L2 QTL              0.0000E+00   0.0000E+00
+             L1/L2 DIV(V)-QTL      -1.9605E+00   5.3462E+02
+             WARNING: DIV(V)-QTL too large!
+         15  Fluid done  1.4759E-01  7.0257E-01 mbulk
+         15  PRES gmres        88   9.8532E-05   3.4532E+09   1.0000E-04   1.8132E+00   2.8574E+00    F
+         15  Hmholtz VELX      12   4.4910E-09   4.9831E+08   1.0000E-07
+         15  Hmholtz VELY      11   8.4670E-08   4.6035E+08   1.0000E-07
+         15  Hmholtz VELZ      11   9.5614E-08   1.0320E+09   1.0000E-07
+             L1/L2 DIV(V)           2.5621E-05   2.4664E+09
+             L1/L2 QTL              0.0000E+00   0.0000E+00
+             L1/L2 DIV(V)-QTL       2.5621E-05   2.4664E+09
+             WARNING: DIV(V)-QTL too large!
+         15  Fluid done  1.4759E-01  3.3705E+00 mwall
+         15  Multidomain data exchange done for mwall   1.4807E-02   1.4886E-02
+         15  Multidomain data exchange done for mbulk   1.4823E-02   2.8207E+00
+Monitor: Ubar   1.4759107E-01  4.5006070E-02  1.1354153E+03  1.2944520-321  mbulk
+
+       15  1.4759E-01 Write checkpoint
+       FILE:/nfs/nfsRaid5/users/thfl0001/chtrdns/2019_12-05_neknek/mbulk0.f00001                                                                
+Monitor: Ubar   1.4759107E-01 -2.8653435E+03  7.2888193E+13  1.2944520-321  mwall
+
+       15  1.4759E-01 Write checkpoint
+       FILE:/nfs/nfsRaid5/users/thfl0001/chtrdns/2019_12-05_neknek/mwall0.f00001                                                                
+
+       15  1.4759E-01 done :: Write checkpoint
+                              file size =      53.    MB
+                              avg data-throughput =  1513.9MB/s
+                              io-nodes =    15
+
+
+       15  1.4759E-01 done :: Write checkpoint
+                              file size =      72.    MB
+                              avg data-throughput =  1556.1MB/s
+                              io-nodes =    15
+
+Step     16, t= 1.5643243E-01, DT= 8.8413675E-03, C=******* 3.6384E+01 3.7741E+00
+Step     16, t= 1.5643243E-01, DT= 8.8413675E-03, C=******* 3.6384E+01 3.7741E+00
+             Solving for Hmholtz scalars
+             Solving for Hmholtz scalars
+         16  Hmholtz TEMP       5   1.0046E-09   2.5901E+04   1.0000E-07
+         16  Scalars done  1.5643E-01  6.2713E-02
+             Solving for fluid
+         16  Project PRES           6.2775E+08   6.2391E+08   9.9389E-01  11  13
+         16  PRES gmres        25   7.7498E-05   1.0499E+08   1.0000E-04   4.6070E-01   7.3811E-01    F
+         16  Hmholtz VELX       6   3.5674E-09   2.4572E+08   1.0000E-07
+         16  Error Hmholtz TEMP     100   1.1038E-03   8.3220E+13   1.0000E-07
+         16  Scalars done  1.5643E-01  1.0479E+00
+         16  Hmholtz VELY       6   3.4096E-09   2.3708E+08   1.0000E-07
+             Solving for fluid
+         16  Hmholtz VELZ       6   4.8806E-09   3.3827E+08   1.0000E-07
+             L1/L2 DIV(V)          -4.0836E+05   4.0934E+07
+             L1/L2 QTL              0.0000E+00   0.0000E+00
+             L1/L2 DIV(V)-QTL      -4.0836E+05   4.0934E+07
+             WARNING: DIV(V)-QTL too large!
+         16  Fluid done  1.5643E-01  1.0957E+00 mbulk
+         16  Project PRES           2.5695E+17   2.2850E+17   8.8930E-01  11  13
+         16  PRES gmres       500   1.6224E+02   4.9722E+16   1.0000E-04   1.0741E+01   1.6857E+01    F
+         16  Error Hmholtz VELX     100   1.8139E+05   1.0054E+16   1.0000E-07
+         16  Error Hmholtz VELY     100   1.7494E+06   9.4792E+15   1.0000E-07
+         16  Error Hmholtz VELZ     100   1.3508E+05   2.1730E+16   1.0000E-07
+             L1/L2 DIV(V)           2.8192E+06   3.9621E+16
+             L1/L2 QTL              0.0000E+00   0.0000E+00
+             L1/L2 DIV(V)-QTL       2.8192E+06   3.9621E+16
+             WARNING: DIV(V)-QTL too large!
+         16  Fluid done  1.5643E-01  1.9522E+01 mwall
+         16  Multidomain data exchange done for mwall   1.6284E-02   1.6397E-02
+         16  Multidomain data exchange done for mbulk   1.6311E-02   1.9471E+01
+Monitor: Ubar   1.5643243E-01 -3.1545961E+01  6.9467665E+12  1.2944520-321  mbulk
+Monitor: Ubar   1.5643243E-01 -2.0747605E+11  2.0412468E+28  1.2944520-321  mwall
+Step     17, t= 1.6350553E-01, DT= 7.0730940E-03, C=******* 5.7185E+01 2.0802E+01
+Step     17, t= 1.6350553E-01, DT= 7.0730940E-03, C=******* 5.7185E+01 2.0802E+01
+             Solving for Hmholtz scalars
+             Solving for Hmholtz scalars
+         17  Error Hmholtz TEMP     100   1.3365E-01   1.9594E+11   1.0000E-07
+         17  Scalars done  1.6351E-01  8.0123E-01
+             Solving for fluid
+         17  Project PRES           1.7737E+16   1.7741E+16   1.0002E+00  12  13
+         17  Error Hmholtz TEMP     100   1.6223E+22   3.4014E+28   1.0000E-07
+         17  Scalars done  1.6351E-01  1.1751E+00
+             Solving for fluid
+         17  Project PRES           6.5455E+31   6.5563E+31   1.0017E+00  12  13
