@@ -1,8 +1,8 @@
-###Project description:
+# Project description:
    The goal is to simulate wall roughness in a channel flow. The roughness is approximated with a pattern of truncated cones. The height of the roughness elements is below 20 wall units, which introduces many elements in order to resolve the elements. In the bulk flow less elements could be used. However currently the distorted mesh at the wall is extruded into the bulk region, which leads to high aspect ratio elements and therefore to an unfavorable Courant number distribution. The idea is to use NekNek which couples the distorted mesh (wall region) with a high quality genbox mesh in the bulk flow featuring "correct" sized elements.
    
    
-###The issue:   
+# The issue:   
    Several tests for the smooth wall case using the roughness mesh initialzed with "ref.fld" field have shown the following:
    - without periodic boundary conditions - using inflow outflow in streamwise and wall in spanwise direction - everything works fine
    - with streamwise periodic boundary conditions the flow field explodes right after few timesteps (in timestep 2 GMRES takes 500 iterations), see "neknek/logfile_neknek" and "pictures/velocity_neknek_3d.png"
@@ -17,7 +17,7 @@
       - using genbox mesh for the wall region
       - using Nek5000 v19
       
-###How I ran the test case (I am using Nek5000 v17):
+# How I ran the test case (I am using Nek5000 v17):
    1. export PPLIST="NEKNEK"
    2. makenek sim (compiler flags are mcmodel=medium for Fortran and C)
    3. cp nek5000 neknek/
