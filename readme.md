@@ -23,5 +23,5 @@
    3. cp nek5000 neknek/
    4. cp ref.fld neknek/
    5. cd neknek
-   6. neknek mwall mbulk <nwall> <nbulk> (In the test I used 15 for each session)
+   6. neknek mwall mbulk [nwall] [nbulk] (In the test I used 15 for each session)
    

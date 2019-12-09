@@ -138,9 +138,9 @@ c-----------------------------------------------------------------------
 
       n=nx1*ny1*nz1*nelv
       if (istep.eq.0) then
-         if(ifgfldr.eq.1) then
+c         if(ifgfldr.eq.1) then
             call gfldr('ref.fld')
-         endif
+c         endif
          
          ! do some checks
          if(mod(nely,2).ne.0) then

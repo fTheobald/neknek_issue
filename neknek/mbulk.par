@@ -20,7 +20,7 @@ targetCFL = 5.0 # for production from init field
 writeControl = timeStep
 writeInterval = 15
 
-userParam10 = 1 # perform field interpolation 1=yes; 0=no
+#userParam10 = 1 # perform field interpolation 1=yes; 0=no
 
 
 #filtering = hpfrt # set to none in case of Smagorinski 
